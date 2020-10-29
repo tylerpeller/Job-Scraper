@@ -54,7 +54,7 @@ listings = driver.find_elements_by_class_name("job-card-list__title")
 page = driver.find_elements_by_xpath("//li/button/span")
 pg=1
 # links = driver.find_elements_by_xpath("li//div/div/div/div/div/a")
-for i in range(len(page)):
+for i in range(len(page)):       ## NEED TO FIX THIS LOOP- LOOPING OVER ALL JOBS ON 1 PAGE len(pages) TIMES       
     if pg>len(page):
         break
     # print (i.text)
